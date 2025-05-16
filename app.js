@@ -1,8 +1,5 @@
-if(process.env.NODE_ENV != "production"){
-    require('dotenv').config();
-}
+require('dotenv').config();
 
-// Add check for environment variables
 if (!process.env.MAP_TOKEN) {
     console.error("MAP_TOKEN environment variable is not set!");
     process.exit(1);
